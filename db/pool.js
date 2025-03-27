@@ -5,5 +5,5 @@ module.exports = new Pool({
   user: "nicolo",
   database: "message_board",
   password: "pgpass",
-  port: 5432,
+  port: 26169,
 });
