@@ -1,9 +1,13 @@
 <html>
+  <head>
+    <title>New Message</title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
   <body>
     <form method="POST" action="/new">
       <h1>New Message</h1>
-      <input placeholder="author" name="messageUser" type="text" />
-      <input placeholder="message" name="messageText" type="text" />
+      <input placeholder="Author" name="messageUser" type="text" required />
+      <input placeholder="Message" name="messageText" type="text" required />
       <button type="submit">Submit</button>
     </form>
   </body>
