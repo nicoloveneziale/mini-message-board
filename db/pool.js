@@ -1,8 +1,9 @@
-const { Pool } = reqiure("pg");
+const { Pool } = require("pg");
 
 module.exports = new Pool({
   host: "localhost",
   user: "nicolo",
   database: "message_board",
-  password: process.env.DBPASS,
+  password: "pgpass",
+  port: 5432,
 });
