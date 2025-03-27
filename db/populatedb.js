@@ -11,8 +11,7 @@ const SQL = `
 async function main() {
   console.log("seeding...");
   const client = new Client({
-    connectionString:
-      "postgresql://postgres:LWlysELHhxLFEsarQOChadXTppMKhsBW@yamabiko.proxy.rlwy.net:26169/railway",
+    connectionString: "postgresql://nicolo:pgpass@localhost:5432/messages",
   });
   await client.connect();
   await client.query(SQL);
